@@ -1,0 +1,89 @@
+/* RegisterForm.css */
+
+.register-form {
+  display: flex;
+  justify-content: center;
+  max-width: 100%; /* Full width */
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #1c2334, #0e111a);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-box, .right-box {
+  flex: 1; /* Each box takes equal space */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #141825;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.left-box {
+  margin-right: 10px; /* Adjust spacing between boxes */
+}
+
+.right-box {
+  margin-left: 10px; /* Adjust spacing between boxes */
+}
+
+.form-group {
+  flex: 1; /* Ensure content stretches to fill the box */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Gap between form groups */
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #2d313f;
+  border-radius: 4px;
+  background-color: #2c3241; /* Text box background color */
+  color: white; /* Text color */
+  width: 100%; /* Full width */
+}
+
+.input[type="file"] {
+  background-color: #2c3241; /* File input background color */
+}
+
+.register-button {
+  background-color: #ff9102;
+  color: white;
+  border: 2px solid orange;
+  padding: 8px 8px; /* Reduced padding */
+  cursor: pointer;
+  font-size: 14px; /* Reduced font size */
+  border-radius: 5px;
+}
+
+.register-button:hover {
+  background-color: #ff9933; /* Adjust the hover color as needed */
+}
+
+
+.confirm-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #38687e; /* Confirm button background color */
+  color: white; /* Confirm button text color */
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #fe9409; /* Confirm button hover color */
+}
+

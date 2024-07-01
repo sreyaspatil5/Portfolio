@@ -1,0 +1,131 @@
+/* SignInForm.css */
+
+.signin-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to right, #1c2334, #0e111a); /* Gradient background */
+  color: white; /* Text color to stand out against the dark background */
+  border-radius: 8px; /* Updated border radius for consistency */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Updated box shadow for depth */
+}
+
+.signin-container h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff; /* Label color to contrast with the background */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #676666;
+  border-radius: 5px;
+  background: #ffffff; /* Background for the input fields */
+  color: #000000; /* Text color for input fields */
+}
+
+.signin-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #ff6624;
+  color: #ffffff;
+  border: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: #f48722;
+}
+
+.login-options {
+  margin-top: 20px;
+}
+
+.login-options button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.login-options button:last-child {
+  margin-bottom: 0;
+}
+
+.google-login {
+  background-color: #db4437; /* Google color */
+}
+
+.linkedin-login {
+  background-color: #0077b5; /* LinkedIn color */
+}
+
+.google-login:hover {
+  background-color: #c1351d; /* Darker shade for hover */
+}
+
+.linkedin-login:hover {
+  background-color: #005582; /* Darker shade for hover */
+}
+
+.login-icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 20px; /* Adjust the size of the icon */
+}
+
+/* Success Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup .close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup .close:hover,
+.popup .close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,85 @@
+/* Base Navbar styles */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px 7%;
+    color: black; /* Default text color */
+}
+
+.logo {
+    color: #ff9102;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 12px 12px;
+    font-size: 15px;
+}
+
+.nav-item:hover {
+    color: #ff9102; /* Adjust the hover color as needed */
+}
+
+.register-button {
+    background-color: #ff7700;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.register-button:hover {
+    background-color: #f3811e; /* Adjust the hover color as needed */
+    color: white;
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toggle {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+/* Light Mode styles */
+.navbar.light-mode {
+    background: white;
+    color: black;
+}
+
+.navbar.light-mode .nav-link {
+    color: black;
+}
+
+.navbar.light-mode .nav-link:hover {
+    color: #ff9102; /* Adjust hover color as needed */
+}
+
+/* Dark Mode styles */
+.navbar.dark-mode {
+    background: black;
+    color: white;
+}
+
+.navbar.dark-mode .nav-link {
+    color: white;
+}
+
+.navbar.dark-mode .nav-link:hover {
+    color: #ff9102; /* Adjust hover color as needed */
+}

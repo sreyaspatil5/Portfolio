@@ -1,0 +1,243 @@
+/* src/Components/CompanyTags/CompanyTags.css */
+
+/* Root variables for text color */
+:root {
+  --text-color: #f7670d; /* Default text color */
+}
+
+body.dark-mode {
+  --text-color: #fff; /* Text color for dark mode */
+}
+
+/* CompanyTags styles */
+.company-tags-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.company-tags-title {
+  color: var(--text-color); /* Use CSS variable for color */
+}
+
+.scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.scroller__inner {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.scroller img {
+  width: 150px; /* Adjust as needed */
+  height: auto; /* Ensure it fits within the circle */
+  margin-right: 20px; /* Space between images */
+}
+
+/* Animation for scroller */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ChoicePage styles */
+.choice-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  
+  color: #333;
+  padding: 2rem;
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.choice-page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: inherit;
+}
+
+.choice-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.choice-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.choice-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: auto;
+  margin-bottom: 1rem;
+}
+
+.choice-button {
+  padding: 0.75rem 2rem;
+  background-color: #ff7700;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.choice-button:hover {
+  background-color: #ff7700;
+}
+
+.partition {
+  width: 4px;
+  height: 298px;
+  background: linear-gradient(to bottom, #ff9900, rgb(253, 113, 6), rgb(255, 255, 255));
+  margin: 0 1rem;
+  position: relative;
+}
+
+.partition::after {
+  content: "";
+  background: rgb(246, 127, 17);
+  position: absolute;
+  top: -4px;
+  left: -2px;
+  border-radius: 50%;
+}
+
+.why-choose-us {
+  text-align: center;
+  margin: 2rem 0;
+  color: inherit;
+}
+
+.why-choose-us-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.why-choose-us-paragraph {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gradient-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap; /* Allows wrapping to a new line if space is insufficient */
+}
+
+.gradient-border-box {
+  width: 200px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  padding: 12px; /* Adjust padding as needed */
+  border-radius: 20px; /* Slightly rounded corners */
+  text-align: center;
+  line-height: 50px; /* Align text vertically */
+  font-size: 16px; /* Adjust font size */
+  position: relative;
+  display: flex; /* Flex container for centering text */
+  justify-content: center;
+  align-items: center;
+  border: 6px solid transparent; /* Border thickness for gradient */
+  background-color: transparent; /* Ensure no background color */
+  overflow: hidden; /* Prevents overflow of ::after pseudo-element */
+  color: #FFF; /* Text color */
+  background: #000; /* Background color inside the box */
+}
+
+.gradient-border-box::after {
+  content: "";
+  position: absolute;
+  top: -6px; /* Adjust to match border thickness */
+  left: -6px; /* Adjust to match border thickness */
+  width: calc(100% + 12px); /* Expands width to include border */
+  height: calc(100% + 12px); /* Expands height to include border */
+  border-radius: 20px; /* Matches curvature of the main box */
+  border: 6px solid transparent; /* Border thickness for gradient */
+  border-image: linear-gradient(to right, red, orange) 1; /* Gradient border */
+  z-index: -1; /* Places behind the main content */
+  pointer-events: none; /* Ensures it does not interfere with interactions */
+}
+.gradient-border-box p {
+  
+  line-height: 1.5; /* Adjust this value to control spacing between lines */
+  text-align: center; /* Center align the text */
+  margin: 0; /* Remove default margin if needed */
+}
+
+
+html {
+  height: 100%;
+  background: #000; /* Background color for the page */
+  display: flex;
+}
+
+body {
+  margin: auto; /* Center the body content */
+  color: #FFF; /* Default text color */
+}
+
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .company-tags-title,
+.dark-mode .choice-page-title,
+.dark-mode .why-choose-us-title {
+  color: #e0e0e0;
+}
+
+.dark-mode .choice-button {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.dark-mode .partition {
+  background: linear-gradient(to bottom, #ff9900, rgb(117, 100, 0), rgb(0, 0, 0));
+}
+
+.dark-mode .gradient-border-box {
+  background-color: #333;
+}
+
+.dark-mode .gradient-border-box::before {
+  background: linear-gradient(to bottom, #ffbf00, rgb(255, 225, 0), rgb(0, 0, 0));
+}
+
+.dark-mode .text {
+  color: #e0e0e0;
+}
+
+.text {
+  color: aliceblue;
+  justify-content: center;
+}
